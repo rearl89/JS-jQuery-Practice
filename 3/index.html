@@ -2,12 +2,19 @@
 <html>
 <head>
     <script src="https://code.jquery.com/jquery-git.js"></script>
-    <script> //Your Code Here </script>
+    <script> 
+    $(document).ready(function(){ 
+        $('button').click(function(){
+            console.log($('input').val())  
+        })
+    });
+    </script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>How to get the value of a textbox using jQuery</title>    
 </head>
 <body>
     <input type="text" value="Input text here">
+    <button>Log value</button>
 </body>
 </html>
